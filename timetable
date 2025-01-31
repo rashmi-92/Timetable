@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG Student Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .break {
+            background-color: #f9e79f;
+        }
+    </style>
+</head>
+<body>
+    <h1>UG Student Timetable</h1>
+    <p>Semester: <input type="text" id="semester"></p>
+    <p>Section: <input type="text" id="section"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:45 AM - 9:45 AM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+            <tr>
+                <td>9:45 AM - 10:45 AM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+            <tr class="break">
+                <td>10:45 AM - 11:00 AM</td>
+                <td colspan="6">Tea Break</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+            <tr class="break">
+                <td>1:00 PM - 1:30 PM</td>
+                <td colspan="6">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>1:30 PM - 2:30 PM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+            <tr>
+                <td>2:30 PM - 3:30 PM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+            <tr>
+                <td>3:30 PM - 4:00 PM</td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+                <td><input type="text" placeholder="Subject | Instructor"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
