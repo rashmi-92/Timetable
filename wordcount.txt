@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class InteractiveWordCount {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String choice;
+
+        System.out.println("=== Word Count Program ===");
+
+        do {
+            // Input from user
+            System.out.print("Enter a sentence: ");
+            String input = scanner.nextLine();
+
+            // Check and count words
+            if (input.trim().isEmpty()) {
+                System.out.println("The input is empty. Word count: 0");
+            } else {
+                String[] words = input.trim().split("\\s+");
+                System.out.println("Word count: " + words.length);
+            }
+
+            // Ask if user wants to continue
+            System.out.print("Do you want to enter another sentence? (yes/no): ");
+            choice = scanner.nextLine().trim().toLowerCase();
+
+        } while (choice.equals("yes"));
+
+        System.out.println("Thank you for using the Word Count Program!");
+        scanner.close();
+    }
+}
